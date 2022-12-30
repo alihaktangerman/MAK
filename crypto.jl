@@ -12,7 +12,7 @@ m = Int(round(n^2*log(q)))
 #convention
 ZZq = Int/q;
 #convention
-d = Normal{Float64}(.0,1.)
+d = Normal(.0,1.)
 #key generation
 x = [ZZq(rand(Int)) for i=1:n] #constructing n-vector
 A = [ZZq(rand(Int)) for i=1:m, j=1:n]; #constructing (mxn)-matrix

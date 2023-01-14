@@ -2,7 +2,6 @@ using CommutativeRings
 using Primes
 using Distributions
 using Random
-using SparseArrays
 
 #parameters
 n = 10
@@ -22,6 +21,6 @@ y = A*x+e
 b = ZZq(1)
 w = ZZq.(rand(Bool,1,m))
 c = w*[A y]
-c[end] += b*Int(floor(q/2))
+c[end] += b*ZZq(floor(q/2))
 #decryption
 m = c*[x; ZZq(-1)]

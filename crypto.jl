@@ -19,7 +19,7 @@ e = ZZq.(round.(rand(d,m)))
 y = A*x+e
 #encryption
 b = ZZq(1)
-w = ZZq.(rand(Bool,1,m))
+w = ZZq.(rand(0:1,1,m))
 c = w*[A y]
 c[end] += b*ZZq(floor(q/2))
 #decryption

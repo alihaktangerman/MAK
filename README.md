@@ -1,5 +1,5 @@
 # MAK
-Learning with Errors.
+Lattice based crypto.
 Thanks to my teacher Burak Yıldıran Stodolsky.
 
-Muharebe Arama Kurtarma
+
